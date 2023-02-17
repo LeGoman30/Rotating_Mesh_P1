@@ -1,0 +1,34 @@
+/*----------------------------*-C++-*------------------------------*\
+| =========                |                                        |
+| \\      /  F ield        | OpenFOAM: The Open Source CFD Toolbox  |
+|  \\    /   O peration    | Version:  2.2.0                        |
+|   \\  /    A nd          | Web:      www.OpenFOAM.org             |
+|    \\/     M anipulation |                                        |
+\*-----------------------------------------------------------------*/
+FoamFile
+{
+    version     4.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      meshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+surfaceFile             "geometry/box.fms";
+maxCellSize 	0.1;
+boundarycellSize 	0.1;
+renameBoundary // To rename the different patches
+{
+    defaultType        wall;
+    newPatchNames
+    {
+        "xMax"{newName Inlet; type wall;}
+        "xMin"{newName Outlet; type wall;}
+        "yMax"{newName top; type wall;}
+        "yMin"{newName bottom; type wall;}
+        "zMin"{newName Side1; type wall;}
+        "zMax"{newName Side2; type wall;}
+    }
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
