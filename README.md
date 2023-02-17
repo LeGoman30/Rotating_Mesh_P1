@@ -3,6 +3,8 @@ This repository contains the files for the rotating mesh simulation using dynami
 
 <h1>Simulation details</h1>
 <ul>Openfoam Files
-<li> O </li>
+<li> 0 </li>
 <li> Constant </li>
 <li> System </li>
+
+<p> The ) folder contains the variable files such as k , omega , nut , U and p. these file constain the information on the boundary and their condition at time step of 0 sec. Next in the constant folder where you can find the information on the mesh and the boundary faces which would be created under polymesh folder once you run the blockmesh command and the snappyHexmesh command. The trisurface folder contains the geometry of the propeller as well as the boundary in .STL format which could be easily used by the openFoam tools to read the geometry in asiic format. Last but not the least the system folder contains the simulation directory where the solver conditions are provided with the mesh directory as well. With the help of decomposepardict you can deconstruuct and reconstruct the mesh during the parallel processing and the cotrolDict consit of the simulation parameters such as the type of solver, time steps, deltaT and much more.These files could also be copeid from the OpenFOAM tutorials folder depending on the type of problem you are working on.</p>
