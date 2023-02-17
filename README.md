@@ -1,6 +1,8 @@
 # Rotating Mesh Simulation
 This repository contains the files for the rotating mesh simulation using dynamic mesh properties and PIMPLE solver in openFOAM. PIMPle solver is know for solving the transient laminar and turbulent flow using Reynolds Averaged Navier Stokes Equations. This simulation was done on a simplified and custom propeller design to test the simulation setting for an average mesh to run faster and quicker on a heavy gaming laptop. 
 
+https://user-images.githubusercontent.com/106860954/219719945-2f4b4060-fe8a-41bf-b598-7f07a9b01aae.mp4
+
 <h1>Simulation details</h1>
 <ul><h3>Openfoam Files</h3>
 <li> 0 </li>
@@ -13,5 +15,5 @@ This repository contains the files for the rotating mesh simulation using dynami
  
 
 
-https://user-images.githubusercontent.com/106860954/219719945-2f4b4060-fe8a-41bf-b598-7f07a9b01aae.mp4
+
 
